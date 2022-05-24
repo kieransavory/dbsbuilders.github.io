@@ -4,6 +4,12 @@
     scroll-behavior: smooth;
 }
 
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
 /* Hero image styling for desktop */
 
 .hero{
@@ -190,4 +196,161 @@
     transform: scale(1.25) rotate(-10deg);
     opacity: 1;
     cursor: pointer;
+}
+
+/* ********************************************************************************MEDIA QUERY FOR MOBILE DEVICES*********************************************************************************************************************** */
+
+@media screen and (max-width: 420px) {
+
+
+    .hero{
+        background-image: url(dbskitchen.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100vh;
+    }
+    
+    .herotext{ 
+        padding: 1vw;
+        width: 80%;
+        height: auto;
+        transform: translateY(calc(50vh - 20vh));
+        border-left: 30px solid rgb(21, 0, 103);
+    }
+    
+    .herotext > h1 {
+        color: white;
+        font-size: 50px;
+    }
+    
+    .herotext > p {
+        margin: 20px;
+        color: white;
+        font-size: 20px;
+    }
+    
+    
+    
+    /* Navbar styling for desktop */
+    
+    .navbar{ 
+        display: none;
+    }
+    
+    
+    /* About section styling for desktop */
+    
+    .whoweare{ 
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .whoweare > h2{ 
+        font-size: 30px;
+        text-align: right;
+        border-left: 25px solid rgb(21, 0, 103);
+        color: rgb(21, 0, 103);
+    }
+    
+    .whoweare > p {
+        width: 70%;
+        font-size: 16px;
+    }
+    
+    /* Hero image 2 for desktop */
+    
+    .hero2{
+        background-image: url(dbsourwork.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100vh;
+    }
+    
+    .whatwedo{ 
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .whatwedo > h2{ 
+        margin: 40px;
+        font-size: 30px;
+        text-align: right;
+        padding: 1vw;
+        border-right: 25px solid rgb(21, 0, 103);
+        color: rgb(21, 0, 103);
+    }
+    
+    .whatwedo > p {
+        margin: 40px;
+        width: 80%;
+        padding: 1vw;
+        font-size: 16px;
+    }
+    
+    
+    .footer{
+        height: 135px;
+        background-color: rgb(29, 29, 29);
+        margin: 0px;
+    }
+    
+    .footer > ul {
+       padding: 10px;
+       float: right;
+       text-align: right;
+    }
+    
+    .footer > ul > li {
+        transition: all 0.5s;
+        list-style-type: none;
+    }
+    
+    
+    .footer > ul > li > a{
+        color: white;
+        opacity: 0.5;
+        font-size: 18px;
+        text-decoration: none;
+        transition: all 0.5s;
+    }
+    
+    .footer > ul > li:hover{
+        transition: all 0.5s;
+    }
+    
+    
+    .footer > ul > li > a:hover{
+        opacity: 1;
+        transition: all 0.5s;
+        cursor: pointer; 
+    }
+    
+    #socialnavs{
+        text-align: left;
+        float: left;
+    }
+    
+    #socialnavs > li > img{
+        transition: all 0.5s;
+        opacity: 0.5;
+        padding: 10px;
+        width: 32px;
+        height: 32px;
+    }
+    
+    #socialnavs > li > img:hover{
+        transition: all 0.5s;
+        transform: scale(1.25) rotate(-10deg);
+        opacity: 1;
+        cursor: pointer;
+    }
+    
+
+
+
+    
 }
