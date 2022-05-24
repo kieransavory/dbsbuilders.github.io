@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="eng">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +9,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="stylesheet.css">
         <link rel="icon" type="image/x-icon" href="favicon.png">
+
 
 
 
@@ -26,9 +27,33 @@
             </ul>
         </nav>
 
+        <nav id="mobilenavbar" class="mobilenavbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Projects</a></li>
+                <li><a>Contact</a></li>
+                <li><a>Get a quote</a></li>
+            </ul>
+
+            
+        </nav>
+
+
+
+
     
         <!-- Hero image and text -->
-        <div class="hero">
+        <div id="hero1" class="hero">
+
+        <button onclick="hamburgerMenu();" id="navbartoggle" class="navbar-toggle">
+            <span class="hamburgerbar"></span>
+            <span class="hamburgerbar"></span>
+            <span class="hamburgerbar"></span>
+        </button>
+        
+
+
             <div class="herotext">
                 <h1>DBS Building Services</h1>
                 <p>Local trusted tradesmen - building your dream.</p>
