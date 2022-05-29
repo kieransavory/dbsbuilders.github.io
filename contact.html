@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>DBS Building Services - Contact</title>
+        <meta name="description" content="DBS Building Services and Design Services - contact us page.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="icon" type="image/x-icon" href="favicon.png">
+
+
+
+
+    </head>
+    <body>
+
+        <!-- Navbar Markup -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a>Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <nav id="mobilenavbar" class="mobilenavbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a>Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            
+        </nav>
+
+
+
+
+    
+        <!-- Hero image and text -->
+        <div id="hero1" class="herocontact">
+
+        <button onclick="hamburgerMenu();" id="navbartoggle" class="navbar-toggle">
+            <span class="hamburgerbar"></span>
+            <span class="hamburgerbar"></span>
+            <span class="hamburgerbar"></span>
+        </button>
+        
+
+
+            <div class="herotext">
+                <h1>Contact Us</h1>
+                <p>Send us a message!</p>
+            </div>
+        </div>
+
+
+        <!-- Contact form -->
+
+        <div class="contactformdiv">
+
+            <form  class="contactform" method="post" action="contacthandler.php">
+                <input type="text" name="name" placeholder="Your Name" required> 
+                <br>
+                <input type="email" name="email" placeholder="Your Email Address" required>
+                <br>
+                <input type="text" name="message" id="message" placeholder="Your Message" required>
+                <br>
+                <input type="text" name="phonenumber" id="numberfield" placeholder="Your Phone Number">
+                <br>
+                <button type="submit">Send message</button>
+            </form>
+
+        </div>
+
+        <!-- Footer -->
+
+        <footer class="footer">
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="mailto:info@dbsbuilders.co.uk">Email Us</a></li>
+                <li><a href="tel:07796871830">Call Us</a></li>
+                <li><a>Contact</a></li>
+                <li><a style="color:rgb(127, 110, 255); opacity: 1;" href="contact.html">Return to top</a></li>
+            </ul>
+
+            <ul id="socialnavs">
+                <li><img onclick="facebookOpen();" title="Visit our Facebook"src="facebook.png" alt=""></li>
+                <li><img onclick="instagramOpen();" title="Visit our Instagram" src="insta.png" alt=""></li>  
+            </ul>
+        </footer>
+
+
+
+
+
+
+
+      
+        <script src="script.js" async defer></script>
+    </body>
+</html>

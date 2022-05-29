@@ -19,7 +19,7 @@ body{
     width: 12.5px;
   }
 ::-webkit-scrollbar-track {
-    background-color: #ffffff; 
+    background-color: #bdbdbd; 
   }
 ::-webkit-scrollbar-thumb {
     background-color: rgb(120, 120, 120); 
@@ -43,6 +43,15 @@ body{
 
 .heroabout{
     background-image: url(dbsabouthero.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+.herocontact{
+    background-image: url(dbsflooring.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -241,6 +250,83 @@ body{
     opacity: 1;
     cursor: pointer;
 }
+
+
+/* Contact form styling for desktop */
+
+.contactformdiv {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to bottom right, rgb(13, 1, 75), rgb(0, 0, 20));
+
+}
+
+.contactformdiv > form > input {
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: rgb(66, 37, 170);
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    
+}
+
+#message{ 
+    padding-top: 80px; 
+    padding-bottom: 80px;
+}
+
+#numberfield{ 
+    display: none;
+}
+
+.contactform{ 
+    padding: 10%;
+}
+
+.contactform > button { 
+    transition: all 0.5s;
+    width: 20%;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 15px;
+    display: block;
+    margin: auto;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    font-size: 16px;
+}
+
+.contactform > button:hover { 
+
+    background-color: white;
+    cursor: pointer;
+    color: black;
+    transform: scale(1.05);
+}
+
+::placeholder {
+    color: white;
+    opacity: 1; 
+  }
+  
+  :-ms-input-placeholder { 
+   color: white;
+  }
+  
+  ::-ms-input-placeholder { 
+   color: white;
+  }
+
+
+
+
+
+
 
 /* ********************************************************************************MEDIA QUERY FOR MOBILE DEVICES*********************************************************************************************************************** */
 
@@ -447,8 +533,79 @@ body{
         width: 32px;
         height: 32px;
     }
+
+
+    /* Contact form styling for mobile devices */
+
+    .contactformdiv {
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(to bottom right, rgb(13, 1, 75), rgb(0, 0, 20));
     
+    }
+    
+    .contactformdiv > form > input {
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: rgb(66, 37, 170);
+        border-radius: 10px;
+        border: none;
+        color: white;
+        font-size: 20px;
+        
+    }
+    
+    #message{ 
+        padding-top: 50px; 
+        padding-bottom: 50px;
+    }
+    
+    #numberfield{ 
+        display: none;
+    }
+    
+    .contactform{ 
+        padding: 1%;
+        padding-top: 200px;
+    }
+    
+    .contactform > button { 
+        transition: all 0.5s;
+        width: 60%;
+        border-radius: 10px;
+        font-size: 16px;
+        padding: 15px;
+        display: block;
+        margin: auto;
+        background-color: transparent;
+        border: 1px solid white;
+        color: white;
+        font-size: 16px;
+    }
+    ::placeholder {
+        color: white;
+        opacity: 1; 
+      }
+      
+      :-ms-input-placeholder { 
+       color: white;
+      }
+      
+      ::-ms-input-placeholder { 
+       color: white;
+      }
+    
+    
+
+
 }
+
+
+
+
+
 
 @keyframes fade {
 
