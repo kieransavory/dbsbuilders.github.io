@@ -209,7 +209,7 @@ body{
 .footer{
     height: 135px;
     border-top: 1px solid black;
-    background-image: linear-gradient(to bottom right, rgb(104, 104, 104), rgb(0, 0, 0));
+    background-image: linear-gradient(to bottom right, rgb(26, 26, 26), rgb(0, 0, 0));
     margin: 0px;
 }
 
