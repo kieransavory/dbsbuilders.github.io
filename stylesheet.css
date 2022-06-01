@@ -330,6 +330,49 @@ body{
     box-shadow: 5px 5px 5px rgb(108, 68, 251);
 }
 
+.gallerycontainer{ 
+    width: 100%;
+    height: auto;
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.gallerycontainer > figure { 
+    width: 30%;
+    margin: 20px;
+    overflow: hidden;
+}
+
+.gallerycontainer > figure > img { 
+    transition: all 1.0s;
+    height: 400px;
+    width: 100%;
+    filter: blur(0.4px);
+    overflow: hidden;
+}
+
+.gallerycontainer > figure > img:hover { 
+    transition: all 1.0s;
+    filter: blur(0px);
+    max-width: 100%;
+    transform: scale(1.2);
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.gallerycontainer > figure > figcaption { 
+    font-size: 18px;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 100;
+}
+
+
+
+
 ::placeholder {
     color: white;
     opacity: 1; 
