@@ -1,4 +1,7 @@
 # dbsbuilders.github.io
-DBS Builders - Website for local builders. Static site.
+
+Custom coded website for local building company; DBS Building Services. 
+
+https://kieransavory.github.io/dbsbuilders.github.io/
 
 
